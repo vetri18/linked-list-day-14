@@ -1,10 +1,18 @@
-﻿namespace EmployeeWage
+﻿using System.Collections.Generic;
+
+namespace LinkedListProblem
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Linked List Program");
+            LinkedList list = new LinkedList();
+
+            list.Append(56);
+            list.Append(70);
+            list.Display();
+            list.Insert(30, 56);
+            list.Display();
         }
     }
 }
